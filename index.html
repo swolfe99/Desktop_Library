@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class="ui-mobile">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<title>Grids - jQuery Mobile Demos</title>
+	<link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="font.css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="jquery.mobile-1.4.1.min.css">
+	<link rel="stylesheet" href="dl-library.css">
+    <link href="mine.css" rel="stylesheet" type="text/css">
+	<script src="jquery.js"></script>
+	<script src="jquery.mobile-1.4.1.min.js"></script>
+</head>
+<body class="ui-mobile-viewport ui-overlay-a" id="ui-page-top" style="">
+<div data-role="page" class="dl-library ui-page ui-page-theme-a ui-page-footer-fixed ui-page-active" data-quicklinks="true" data-url="/1.4.1/grids/" tabindex="0" style="padding-bottom: 62px; min-height: 441px;">
+<div data-role="header" class="dl-header ui-header ui-bar-inherit" role="banner">
+		<h2 class="ui-title" role="heading" aria-level="1"><a href="#" title="jQuery Mobile Demos home" class="ui-link"><img src="dl-logo.png" alt="jQuery Mobile"></a></h2>
+		<p><span></span></p>
+		<a href="#navpanel" class="dl-navmenu-link ui-nodisc-icon ui-alt-icon ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Menu</a>
+		<a href="#searchpanel" class="dl-search-link ui-nodisc-icon ui-alt-icon ui-btn-right ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Search</a>
+	</div><!-- /header -->
+	<div role="main" class="ui-content dl-content">
+        <h3 class="ui-bar ui-bar-a ui-corner-all">User Guides</h3>
+ <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+			<li class="ui-li-static ui-body-inherit ui-first-child">
+				<h3>File Title</h3>
+				<p>File Description</p>
+				<p class="ui-li-aside"><strong>DATE</strong></p>
+			</li>
+			<li class="ui-li-static ui-body-inherit ui-last-child">
+            <a href="#" class="dl-item">
+				<h3>File Title</h3>
+				<p>File Description</p>
+				<p class="ui-li-aside"><strong>DATE</strong></p>
+            </a>
+			</li>
+		</ul>
+</div><!-- /content -->
+
+<div id="navpanel" data-role="panel" class="dl-navmenu-panel ui-panel ui-panel-position-left ui-panel-display-overlay ui-panel-closed ui-body-a ui-panel-animate" data-position="left" data-display="overlay" data-theme="a">
+<div class="ui-panel-inner">
+	<ul class="dl-list ui-alt-icon ui-nodisc-icon ui-listview">
+		<li data-filtertext="phoenix" data-icon="home" class="ui-first-child">
+        	<a href="#" class="ui-btn ui-btn-icon-right ui-icon-home">Phoenix</a></li>
+		<li data-filtertext="igallery">
+        	<a href="#" data-ajax="false" class="ui-btn ui-btn-icon-right ui-icon-carat-r">iGallery</a></li>
+		<li data-filtertext="sales bulletins">
+        	<a href="#" data-ajax="false" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Sales Bulletins</a></li>
+		<li data-filtertext="compliance">
+        	<a href="#" data-ajax="false" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Compliance</a></li>
+		<li data-filtertext="marketing">
+        	<a href="#" data-ajax="false" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Marketing</a></li>
+        <li data-filtertext="sales training">
+        	<a href="#" data-ajax="false" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Sales Training</a></li>
+		<li data-filtertext="sales operations">
+        	<a href="#" data-ajax="false" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Sales Operations</a></li>
+		<li data-filtertext="managed care">
+        	<a href="#" data-ajax="false" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Managed Care</a></li>
+        <div data-role="collapsible">
+        <h3>Challenger Sale</h3>
+       	<li data-filtertext="wots" class="ui-first-child"><a href="#" data-ajax="false" class="ui-btn">Word on the Street</a></li>
+        <li data-filtertext="wots"><a href="#" data-ajax="false" class="ui-btn">Keystone Tool</a></li>
+        <li data-filtertext="wots" class="ui-last-child"><a href="#" data-ajax="false" class="ui-btn">Insights</a></li>
+    </div>
+</ul></div></div>
+
+<div data-role="panel" id="searchpanel" class="dl-search-panel ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open" data-position="right" data-display="overlay" data-theme="a">
+		<div class="ui-panel-inner"><div class="dl-search">
+			<form class="ui-filterable"><div class="ui-input-search ui-shadow-inset ui-input-has-clear ui-body-inherit ui-corner-all"><input data-type="search" placeholder="Search..."><a href="#" class="ui-input-clear ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-input-clear-hidden" title="Clear text">Clear text</a></div><button type="submit" data-icon="carat-r" data-inline="true" class="ui-hidden-accessible ui-btn ui-icon-carat-r ui-btn-icon-notext ui-btn-inline ui-shadow ui-corner-all" data-iconpos="notext">Submit</button></form>
+		</div></div>
+	</div>
+
+<!-- /panel -->
+
+</div><!-- /page -->
+
+<div class="ui-loader ui-corner-all ui-body-a ui-loader-default">
+<span class="ui-icon-loading"></span><h1>loading</h1></div>
+<div class="ui-panel-dismiss" data-panelid="null"></div>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+/* Header */
+.dl-library .dl-header {
+	background: #fff;
+	border-top: 10px solid #ab440b;
+	border-bottom-color: #eee;
+}
+.dl-library .dl-header h2 {
+	padding: .4em 0 .1em;
+	margin: 0 3em;
+}
+.dl-library .dl-header h2 a {
+	display: inline-block;
+	text-decoration: none;
+	min-height: 40px;
+}
+.dl-library .dl-header h2 img {
+	display: block;
+	width: 140px;
+	height: auto;
+}
+.dl-library .dl-header p {
+	position: absolute;
+	bottom: -2em;
+	left: 1em;
+	margin: 0;
+	color: #666;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.dl-library .dl-header .ui-btn {
+	width: 2em;
+	height: 2em;
+	background: none;
+	border: 0;
+	top: 50%;
+	margin-top: -1em;
+	-webkit-border-radius: .3125em;
+	border-radius: .3125em;
+	opacity: .4;
+	filter: Alpha(Opacity=40);
+}
+
+/* Footer */
+
+/* Content */
+.dl-library .dl-content {
+	padding-top: 3em;
+}
+.dl-library .dl-content > h3,
+.dl-library .dl-content > ul li {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+.dl-library .dl-content > h3 {
+	color: #ab440b;
+	background-color: transparent;
+	font-size: 1.4em;
+	margin: 0 0 1em;
+	font-weight: 600;
+}
+.dl-library .dl-content > ul:not(.dl-list) li {
+/*	font-size: 1.2em;
+	line-height: 1.5;*/
+}
+.dl-library .dl-content > ul {
+	padding-left: 1.3em;
+}
+.dl-library .dl-content > .ui-listview {
+	padding-left: 0;
+}
+.dl-library .dl-content strong {
+	font-weight: 700;
+}
+
+/* Homepage */
+
+/* Code */
+
+/* Lists */
+.dl-library .dl-list .ui-btn,
+.dl-library .dl-list .ui-btn:visited {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	text-shadow: none !important;
+}
+.dl-library .dl-list .ui-btn:hover,
+.dl-library .dl-list .ui-btn:active {
+	color: #3388cc;
+}
+
+/* Navmenu */
+.dl-navmenu-panel .ui-panel-inner > .ui-listview > li.ui-first-child .ui-btn {
+	border-top: none !important;
+}
+.dl-navmenu-panel .ui-btn:after {
+	opacity: .4;
+	filter: Alpha(Opacity=40);
+}
+/* Search */
+
+/* Quick links */
+
+/* View source links */
+
+@media (min-width: 60em) {
+	.dl-library .dl-header h2 {
+		padding: 1em 0 .7em;
+		margin: 0 1em 0 3%;
+		text-align: left;
+	}
+	.dl-library .dl-header h2 img {
+		width: 275px;
+		height: 78px;
+	}
+	.dl-library .dl-header p {
+		bottom: auto;
+		left: auto;
+		top: 50%;
+		right: 15%;
+		font-size: 1.2em;
+		margin-top: -.625em;
+	}
+	.dl-library .dl-navmenu-link {
+		display: none;
+	}
+	.dl-library .dl-search-link {
+		right: 3%;
+	}
+	.dl-library .dl-navmenu-panel {
+		visibility: visible;
+		position: relative;
+		left: 0;
+		float: left;
+		width: 25%;
+		background: none;
+		-webkit-transition: none !important;
+		-moz-transition: none !important;
+		transition: none !important;
+		-webkit-transform: none !important;
+		-moz-transform: none !important;
+		transform: none !important;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+	.dl-library .dl-navmenu-panel .ui-panel-inner {
+		margin-top: 1em;
+		margin-bottom: 3em;
+	}
+	.dl-library .dl-content {
+		width: 67%;
+		padding-top: 1em;
+		padding-left: 3%;
+		padding-right: 5%;
+		float: right;
+	}
+	.dl-navmenu-panel .ui-listview .ui-btn {
+		padding-left: 12.5%;
+	}
+.dl-navmenu-panel .ui-btn {
+		background: none !important;
+		border-color: #ddd !important;
+	}
+	.dl-navmenu-panel .ui-btn::after {
+		opacity: 0;
+		-webkit-transition: opacity 500ms ease;
+		-moz-transition: opacity 500ms ease;
+		transition: opacity 500ms ease;
+	}
+	.dl-navmenu-panel .ui-btn:hover::after {
+		opacity: .4;
+	}
+}
+
+/* View source popup */
+.dl-view-source .ui-collapsible-content::-webkit-scrollbar {
+    width: 5px;
+}
+.dl-view-source .ui-collapsible-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+.dl-view-source .ui-collapsible-content::-webkit-scrollbar-thumb {
+	background: #435A5F;
+	border: solid #222;
+	border-width: 12px 2px 12px 0;
+	border-bottom-right-radius: 5px;
+}
+
+/* Button C - HTML */
+/* Button D - PHP */
+/* Button E - JS */
+/* Button F - CSS */
+
+/**
+ * SyntaxHighlighter
+ * http://alexgorbatchev.com/SyntaxHighlighter
+ *
+ * SyntaxHighlighter is donationware. If you are using it, please donate.
+ * http://alexgorbatchev.com/SyntaxHighlighter/donate.html
+ *
+ * @version
+ * 3.0.83 (July 02 2010)
+ *
+ * @copyright
+ * Copyright (C) 2004-2010 Alex Gorbatchev.
+ *
+ * @license
+ * Dual licensed under the MIT and GPL licenses.
+ */
+.syntaxhighlighter ::-webkit-selection {
+	background-color: #3399ff;
+	color: #fff;
+	text-shadow: none;
+}
+.syntaxhighlighter ::selection {
+	background-color: #3399ff;
+	color: #fff;
+	text-shadow: none;
+}
