@@ -14,10 +14,8 @@
 	<script src="jquery.mobile-1.4.1.min.js"></script>
 <script type="text/javascript" charset="utf-8">
 	function openpdf(){	
-        // external url
-        var ref = window.open(encodeURI('http://apache.org'), '_blank', 'location=yes');
-        // relative document
-        ref = window.open('next.html', '_self');
+		var ref = window.open('http://apache.org', '_blank', 'location=yes');
+		ref.addEventListener('loadstart', function() { alert(event.url); });
     }
     </script>
 <style type="text/css">
