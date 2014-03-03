@@ -12,6 +12,22 @@
     <link href="mine.css" rel="stylesheet" type="text/css">
 	<script src="jquery.js"></script>
 	<script src="jquery.mobile-1.4.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+         var ref = window.open('http://www.google.com', '_blank', 'location=yes');
+         ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
+         ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
+         ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
+         ref.addEventListener('exit', function(event) { alert(event.type); });
+    }
+    </script>
 </head>
 <body class="ui-mobile-viewport ui-overlay-a" id="ui-page-top" style="">
 <div data-role="page" class="dl-library ui-page ui-page-theme-a ui-page-footer-fixed ui-page-active" data-quicklinks="true" data-url="/1.4.1/grids/" tabindex="0" style="padding-bottom: 62px; min-height: 441px;">
@@ -47,7 +63,7 @@
 		<li data-filtertext="igallery">
         	<a href="#" onclick="window.open('test.pdf', '_blank', 'location=no');" data-ajax="false" class="ui-btn ui-btn-icon-right ui-icon-carat-r">iGallery</a></li>
 		<li data-filtertext="sales bulletins">
-        	<a href="#" data-ajax="false" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Sales Bulletins</a></li>
+        	<a href="test.pdf" target="_blank" class="ui-btn ui-btn-icon-right ui-icon-carat-r" data-ajax="false">Sales Bulletins</a></li>
 		<li data-filtertext="compliance">
         	<a href="#" data-ajax="false" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Compliance</a></li>
 		<li data-filtertext="marketing">
